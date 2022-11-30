@@ -1,18 +1,8 @@
 ---
-import '../styles/style.css';
-import Nav from "../components/nav.astro";
+import Layout from '../layouts/base.astro';
+const pageTitle = 'Home';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Misfit Coding</title>
-	</head>
-	<body>
-        <Nav/>
-        <p>It's a homepage!</p>
-	</body>
-</html>
+<Layout pageTitle={pageTitle}>
+	<p>It's a homepage!</p>
+</Layout>
