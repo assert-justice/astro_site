@@ -17,7 +17,11 @@ const {pageTitle} = Astro.props;
 	<body>
 		<img class="banner" src={Logo}>
         <Nav pageTitle={pageTitle}/>
-        <h1>{pageTitle}</h1>
-        <slot/>
+		<div class="content">
+			<div>
+				<h1>{pageTitle}</h1>
+				<slot/>
+			</div>
+		</div>
 	</body>
 </html>

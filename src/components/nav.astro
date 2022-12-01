@@ -2,7 +2,7 @@
 import NavLink from "./nav_link.astro";
 const {pageTitle} = Astro.props;
 const pages = [
-    ['Home', '/'],
+    ['Misfit Coding', '/'],
     ['Courses', '/courses'],
     ['Glossary', '/glossary'],
     ['Projects', '/projects'],
@@ -13,7 +13,6 @@ const pages = [
 
 <nav>
     <ul>
-        <li>Misfit Coding</li>
         {pages.map(([title, path]) => <NavLink title={title} currentTitle={pageTitle} path={path}/>)}
     </ul>
 </nav>

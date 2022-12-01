@@ -1,8 +1,18 @@
 ---
 import Layout from '../layouts/base.astro';
 const pageTitle = 'Courses';
+// In future the course list will be grabbed from pages dynamically
+const courses = [
+	'Intro to Programming with Typescript [in progress]',
+	'Static Websites or, How to Web Dev like it\'s 1995 [in progress]',
+	'Dom Manipulation and Client Side Rendering',
+];
 ---
 
 <Layout pageTitle={pageTitle}>
 	<p>Here are the courses we offer!</p>
+	<p>TODO: working links would be nice</p>
+	<ul>
+		<!-- {courses.map(name => <li></li>)} -->
+	</ul>
 </Layout>

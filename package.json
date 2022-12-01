@@ -11,6 +11,7 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^1.6.10"
+    "astro": "^1.6.10",
+    "remark-breaks": "^3.0.2"
   }
 }
