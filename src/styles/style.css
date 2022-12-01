@@ -5,6 +5,35 @@
 
 body{
     padding: 2%;
-    background-color: black;
+    background-color: #111537;
     color: white;
+}
+
+.banner{
+    width: 25%;
+}
+
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    display: inline;
+}
+
+.nav_link{
+    color: white;
+    text-decoration: none;
+    /* border:  solid white; */
+}
+/* .nav_link:link{
+    color: white;
+}
+.nav_link:visited{
+    color: white;
+} */
+
+.nav_link.nav_link_selected{
+    /* color:red; */
+    border: solid #ce1842;
 }

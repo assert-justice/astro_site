@@ -2,4 +2,6 @@
 const {title, currentTitle, path} = Astro.props;
 ---
 
-<a href={`${path}`}>{title}</a>
+<li>
+    <a class={`nav_link ${title === currentTitle ? 'nav_link_selected' : ''}`} href={`/astro_site${path}`}>{title}</a>
+</li>

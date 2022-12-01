@@ -1,6 +1,7 @@
 ---
 import '../styles/style.css';
-import Logo from "../images/logo_favicon.svg";
+import LogoFavicon from "../images/logo_favicon.svg";
+import Logo from "../images/logo_horizontal.svg";
 import Nav from "../components/nav.astro";
 const {pageTitle} = Astro.props;
 ---
@@ -8,13 +9,14 @@ const {pageTitle} = Astro.props;
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href={Logo} />
+		<link rel="icon" type="image/svg+xml" href={LogoFavicon} />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
 		<title>Misfit Coding</title>
 	</head>
 	<body>
-        <Nav/>
+		<img class="banner" src={Logo}>
+        <Nav pageTitle={pageTitle}/>
         <h1>{pageTitle}</h1>
         <slot/>
 	</body>
