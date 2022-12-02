@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/base.astro';
+import {Content} from '../blurbs/courses.md';
 const pageTitle = 'Courses';
 // In future the course list will be grabbed from pages dynamically
 const courses = [
@@ -12,7 +13,5 @@ const courses = [
 <Layout pageTitle={pageTitle}>
 	<p>Here are the courses we offer!</p>
 	<p>TODO: working links would be nice</p>
-	<ul>
-		<!-- {courses.map(name => <li></li>)} -->
-	</ul>
+	<Content/>
 </Layout>

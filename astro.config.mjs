@@ -1,5 +1,6 @@
 import { defineConfig } from 'astro/config';
-import remarkBreaks from 'remark-breaks'
+import remarkBreaks from 'remark-breaks';
+import remarkToc from 'remark-toc';
 
 // https://astro.build/config
 export default defineConfig({
@@ -7,6 +8,6 @@ export default defineConfig({
     base: '/astro_site',
     markdown:{
         extendDefaultPlugins: true,
-        remarkPlugins: [remarkBreaks],
+        remarkPlugins: [remarkBreaks, remarkToc],
     }
 });
